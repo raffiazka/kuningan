@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.sidebox{
+    display: flex;
+}
+
+h1{
+    margin: 10px;
+}
+
+video{
+    width: 11rem;
+    border-radius: 15px;
+}
+
+.bola img{
+    height: 13rem;
+}
+
+img{
+    width: 250px;
+    margin: 10px;
+    left: 4%;
+    border-radius: 15px;
+}
+
+.box{
+    background-color: steelblue;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 500px;
+    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even){
+    transform: translateX(400%);
+}
+.box button{
+    margin-left: 42%;
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    bottom: 50px;
+    left: 60px;
+}
+
+.box.show{
+    transform: translateX(0);
+}
+
+h2{
+    margin-top: -35%;
+    margin-left: 25%;
+    position: fixed;
+}
+
+h3 {
+    font-size: 15px;
+    margin-left: 100px;
+    margin-right: 50px;
+    text-align: center;
+}
